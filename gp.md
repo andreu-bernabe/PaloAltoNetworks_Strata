@@ -25,6 +25,24 @@ En este articulo detallo paso a paso como implementar y configurar esta modalida
 
    ![Imagen del certifado IntermediateCA](./GP-Images/GP-02.PNG.png)
 
+   * **Generar el certificado de servidore**: Debemos generar el certificado firlado por la CA intermedia, donde los datos deberan de coincidr estricatmetne con la IP o el FQDN del Portal y la puerta de enlace. 
+      * **A**: Si el nombre "subj alt name(SAN)" no existira en el certificado. En los firewalls podemos crear estos atributos debajo de los atriburtos obligatorios. Añadiendo 'HostName', IP, 'e-mail', etc. 
+      * **B**: Si los atributos SAN existen para poder determinar una entrad, entonces la IP o el FQDN que se utilizara para el portal debera de estar peresente en esta lista de registros.
+      * **C**: Este certificado nunca deberia de ser una CA por motivos de seguridad y operativa.
+      * **D**: Siempre que sea possible debera de utilizare el FQDN en lugar de la dirección IP.
+
+ ![Imagen del certifado Servidor(./GP-Images/GP-03.PNG.png)
+ 
+ 
+ Una vez realizada esta configuracción deberaia de haber quedado una configuracción similar a la siguiente.
+ 
+ ![Imagen del certifado Resultado Final](./GP-Images/GP-04.PNG.png)
+ 
+
+
+
+
+
 
 
 2. Crearemos un perfil SSL/TLS des de **Device > Certificate Management > SSL/TLS Service Profile**, el qual referenciaremos a al certificado de servidor que hemos creado en el punto anterior.
