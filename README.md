@@ -4,4 +4,4 @@ Esta documentación es para poder plasmar ciertas configuraciónes de expermient
 
 ## Index
  ### Global Protect
-[GlobalProtect con Azure AD](https://github.com/andreu-bernabe/PaloAltoNetworks_Strata/blob/main/GP_with_AzureAD.md)
+ - [GlobalProtect con Azure AD](https://github.com/andreu-bernabe/PaloAltoNetworks_Strata/blob/main/GP_with_AzureAD.md)
