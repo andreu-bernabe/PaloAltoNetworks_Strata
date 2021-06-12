@@ -74,7 +74,38 @@ En este articulo detallo paso a paso como implementar y configurar esta modalida
 
 ### Configurar el portal de Global Protect
 7. Crearemos el portal de la VPN de Global Protect a partir de **Network > GlobalProtect > Portals** y haremos clic a  **Add**.
+   *  **Name:** Estableceremos el nombre descriptibo que tendra el portal, esta propiedad es meramente estetica.
+   *  **Interface:** Estableceremos a partir de interfice se estara publicando el portal.
+   *  **IP Address Type:** Establecermos IPv4 como direcciónmaiento que sera utilizado.
+   *  **IPv4 Address:** Establemeos la Dirección IPv4 a traves de la que operara el portal.
 
+ ![Portal_general](./GP-Images/GP-10.PNG.png)
+ 
+ 8. Nos desplazaremos a la pestaña de **Autenticatión**.
+   *  **Server Autentication:** Establecemos el perfil de certificado que se va ha utilizar en el portal.
+   *  **Client Autenticatión:** Hamreos clic en el boton **add** y estableceremos un nombre para este 
+      * **Nombre**: Establecemos un nombre para el objeto.
+      * **OS**: Establecmeos para que sistema operativo ara referencia.
+      * **Autentication Profile:** Seleciónamos el perfil que hemos creado con anterioridad.
+      * Una vez realizados los pasos anteriores haremos clic en el boton **OK**.
+
+ ![Portal_Autenticatión](./GP-Images/GP-11.PNG.png)
+
+ 9. Nos desplazaremos a la pestaña de **Agent**.
+   *  Al ser una nueva instalción no existe la configuracción de agente y esta debera de ser creada de 0 y devmos de pulsar sobnre el boton **Add**.
+      *  **Nombe:**  Establecemos un nombre descriptibo para esta configuración.
+      *  **client Certifcate:** Dejaremos este partado vació ta que se utiliza solo en el caso de queramos dar un certificado a los clientes para poder conectarse.
+      *  **Save User Credentials:** En caso de que aceptemos que se almacenen las credenciales de los usuarios, por defecto es YES.
+      *  **Authentication Override:** Esta cookie se puede cifrar / descifrar utilizando cualquier certificado que se seleccione en el menú desplegable 'Certificado para cifrar / descifrar cookie ' y seleciónamos como certifcado el RootCA.
+ 
+  ![Portal_Agent](./GP-Images/GP-12.PNG.png)
+  
+10. Dentro del apartado **Agent** buscamos las sección **Config Selection Criteria** y nos aseguramos que el aparado **SO** este en Any y el aparto user tambien, esto permite restringir el portal a gupos de usuarios en caso de ser necesario
+
+  ![Portal_Agent](./GP-Images/GP-13.PNG.png)
+
+12. Nos desplazamos a la prestaña **External**
+ 
 
 # Bibliografia 
 CONFIGURACIÓN DE CERTIFICADO PARA GLOBALPROTECT - (SSL / TLS, PERFILES DE CERTIFICADO DE CLIENTE, CERTIFICADO DE CLIENTE / MÁQUINA)
