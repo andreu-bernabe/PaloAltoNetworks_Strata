@@ -3,3 +3,5 @@ Esta documentación es para poder plasmar ciertas configuraciónes de expermient
 
 ## Index
 
+
+[logo]: https://github.com/andreu-bernabe/PaloAltoNetworks_Strata/blob/main/Strata_Tagline_Logo_RGB.png "Strata Logo"
