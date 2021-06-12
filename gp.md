@@ -124,10 +124,10 @@ En este articulo detallo paso a paso como implementar y configurar esta modalida
 ### Configurar del Gateway de GlobalProtect
 
 15.   Nos desplazamos a **Network>GlobalProtect>Gateways>Add**
-Go to Device > GlobalProtect Client  and click on 'Check Now' to review for the latest GlobalProtect Agent software
-Click on 'Download' to download the selected agent software image
-At this point, the users will NOT be able to download the software image from the portal
-The downloaded software image has to be activated (click on 'Activate') in order for the users to be able to download from the portal
+   *  Go to Device > GlobalProtect Client  and click on 'Check Now' to review for the latest GlobalProtect Agent software
+   *  Click on 'Download' to download the selected agent software image
+   *  At this point, the users will NOT be able to download the software image from the portal
+   *  The downloaded software image has to be activated (click on 'Activate') in order for the users to be able to download from the portal
 
 
 
