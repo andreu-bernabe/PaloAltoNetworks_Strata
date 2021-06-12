@@ -104,8 +104,23 @@ En este articulo detallo paso a paso como implementar y configurar esta modalida
 
   ![Portal_Agent](./GP-Images/GP-13.PNG.png)
 
-12. Nos desplazamos a la prestaña **External**
+12. Nos desplazamos a la prestaña **External**. Hacemos clic en **Add** el apartado **External Gateway**.
+
+   *  **Name:** Establecemos en nombre del Gateway.
+   *  **Address:** Establecemos el FQDN o Dirección IP que hemos creado para el portal en los puntos anteriroes
+   *  **Source Region:** Estableceremos un any.
+
+  ![Portal_Agent](./GP-Images/GP-14.PNG.png)
  
+13. Nos desplazamos a la pestaña **App**.
+   *  **Connect Method:** Establecemos como valor ""On-Demand""
+   
+  ![Portal_Agent](./GP-Images/GP-15.PNG.png)
+  
+14. En "CA raíz de confianza", seleccione la CA raíz y la CA intermedia. Además, seleccione 'Instalar en el almacén de certificados raíz local' para instalar estos certificados en el almacén de certificados raíz local del cliente después de que el cliente se conecte con éxito al portal por primera vez.
+
+  ![Portal_Agent](./GP-Images/GP-16.PNG.png)
+
 
 # Bibliografia 
 CONFIGURACIÓN DE CERTIFICADO PARA GLOBALPROTECT - (SSL / TLS, PERFILES DE CERTIFICADO DE CLIENTE, CERTIFICADO DE CLIENTE / MÁQUINA)
