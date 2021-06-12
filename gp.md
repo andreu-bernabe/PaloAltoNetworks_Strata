@@ -40,12 +40,9 @@ En este articulo detallo paso a paso como implementar y configurar esta modalida
  
 
 
-
-
-
-
-
 2. Crearemos un perfil SSL/TLS des de **Device > Certificate Management > SSL/TLS Service Profile**, el qual referenciaremos a al certificado de servidor que hemos creado en el punto anterior.
+
+ ![Perfil de SSL/TLS](./GP-Images/GP-05.PNG.png)
 
 4.    
 
