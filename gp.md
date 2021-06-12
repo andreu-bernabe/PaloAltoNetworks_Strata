@@ -44,7 +44,15 @@ En este articulo detallo paso a paso como implementar y configurar esta modalida
 
  ![Perfil de SSL/TLS](./GP-Images/GP-05.PNG.png)
 
-4.    
+4. Crea un perfil de autenticación a partir de **Device > Authentication Profile > Add**.
+* **Nombre:** Establecemos el nombre que va ha tener el perfil de autenticación.
+* **Type:** Escogemos a partir de que funete de datos vamos a absorver la identidad de los usuarios que vamos a utilizar en la VPN.
+* Para finbalizar devemos acceder al apartado **Advanced** donde definiremos el alacance de los usuarios que podran inicar sessión en la VPN, en el caso que nos ocupa para esta prueba de laboratorio utilizaremos el grupo **all**, en caso de necesitar limitarse se podria añadir cualquier otro grupo.
+
+
+ ![Autentication_profile_1](./GP-Images/GP-06.PNG.png)
+ ![Autentication_profile_2](./GP-Images/GP-07.PNG.png)
+
 
 
 
