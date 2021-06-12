@@ -6,4 +6,4 @@ En esta docuemtnacion se encuentran las principales configuraciones para la impl
  ### Global Protect
  -
  - [GlobalProtect con Azure AD](https://github.com/andreu-bernabe/PaloAltoNetworks_Strata/blob/main/GP_with_AzureAD.md)
- - [Como Implementar GlobalProtect](https://github.com/andreu-bernabe/PaloAltoNetworks_Strata/blob/main/GP.md)
+ - [Como Implementar GlobalProtect](https://github.com/andreu-bernabe/PaloAltoNetworks_Strata/blob/main/gp.md)
