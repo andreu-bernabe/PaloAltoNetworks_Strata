@@ -13,6 +13,8 @@ En este articulo detallo paso a paso como implementar y configurar esta modalida
 
 
 ## Vamos Paso A Paso
+
+### Perfil de certificado
 1. Generearemos una CA raíz, una CA intermedia y un Certificado de servidor. De esta dorma contaremos con una ruta de certificación completa.
    
   * **Generacción de los certificados en el Firewall**: Existen muchas opciones diferentes para poder implementar los certificados, no obstante en esta documentacción se ha decido optar por utilizar los certificados auto generados para poder desarollar la estructura de certificación y cifrado de las comunicaciones.
@@ -44,16 +46,33 @@ En este articulo detallo paso a paso como implementar y configurar esta modalida
 
  ![Perfil de SSL/TLS](./GP-Images/GP-05.PNG.png)
 
+
+### Perfil de Autenticación
+
 4. Crea un perfil de autenticación a partir de **Device > Authentication Profile > Add**.
-* **Nombre:** Establecemos el nombre que va ha tener el perfil de autenticación.
-* **Type:** Escogemos a partir de que funete de datos vamos a absorver la identidad de los usuarios que vamos a utilizar en la VPN.
-* Para finbalizar devemos acceder al apartado **Advanced** donde definiremos el alacance de los usuarios que podran inicar sessión en la VPN, en el caso que nos ocupa para esta prueba de laboratorio utilizaremos el grupo **all**, en caso de necesitar limitarse se podria añadir cualquier otro grupo.
+   * **Nombre:** Establecemos el nombre que va ha tener el perfil de autenticación.
+   * **Type:** Escogemos a partir de que funete de datos vamos a absorver la identidad de los usuarios que vamos a utilizar en la VPN.
+   * Para finbalizar devemos acceder al apartado **Advanced** donde definiremos el alacance de los usuarios que podran inicar sessión en la VPN, en el caso que nos ocupa para esta prueba de laboratorio utilizaremos el grupo **all**, en caso de necesitar limitarse se podria añadir cualquier otro grupo.
 
 
  ![Autentication_profile_1](./GP-Images/GP-06.PNG.png)
  ![Autentication_profile_2](./GP-Images/GP-07.PNG.png)
 
 
+### Configuracción de interficies
+5. Crearemos una nueva Zona para poder establezer el perfil de seguridad adecuado a partir de **Network > Zones** y crearemos una nueva zona con el nombre **Zone_VPN** sin inteficeies como miembro.
+
+ ![Zona_VPN_Tunnel](./GP-Images/GP-08.PNG.png)
+
+6. Crearemos la interfice del tunel a partir de **Network > Interfaces > Tunnel** y pulsmos en el boton **add**.
+   *  **Comment:** Establecemos un nombre descriptivo para la utilizadad que se datra al tunel.
+   *  **Tunel ID:** Establecemos el ID del tunel.
+   *  **Virtual Route:** Establecemos el enrutado por defecto.
+   *  **Security Zone:** Establecemos una zona, como buena practica se recomienda que exista una zona para los tuneles VPN ya que esto da una mayor flexibilidad para crear reglas de seguridad separadas.
+
+ ![Interficie_Tunnel](./GP-Images/GP-09.PNG.png)
+
+### Configurar el portal de Global Protect
 
 
 
