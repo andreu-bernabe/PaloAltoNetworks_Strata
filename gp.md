@@ -73,7 +73,7 @@ En este articulo detallo paso a paso como implementar y configurar esta modalida
  ![Interficie_Tunnel](./GP-Images/GP-09.PNG.png)
 
 ### Configurar el portal de Global Protect
-
+7. Crearemos el portal de la VPN de Global Protect a partir de **Network > GlobalProtect > Portals** y haremos clic a  **Add**.
 
 
 # Bibliografia 
