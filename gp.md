@@ -19,11 +19,12 @@ En este articulo detallo paso a paso como implementar y configurar esta modalida
   
     * **Generación del certificado Root:** Devemos de generar un certifcado Raiz con un nombre de comun de cualquier valor unico, esto hace referencia a que sea utilizado para la generación de este IP o FQDN del portal o puerta de enlace.
     
+   ![Imagen del certifado RootCA](./GP-Images/GP-01.PNG.png)
     
-   ![GitHub Logo](/images/logo.png)
-    
-    
-    * **Generación del certificado Intermedio**: Esta opción no es obligatoria pero es recomendable como Best Practices para poder mantener una estrucutra de 3 nivles. 
+   * **Generación del certificado Intermedio**: Esta opción no es obligatoria pero es recomendable como Best Practices para poder mantener una estrucutra de 3 nivles. Devemos generar un certificado intermedio firamdo por el certificado raiz anterior, especificado un nombre común como valor unico que como en el punto anterior no sea la IP o el FQDN del portal o puerta de enlace.
+
+   ![Imagen del certifado IntermediateCA](./GP-Images/GP-02.PNG.png)
+
 
 
 2. Crearemos un perfil SSL/TLS des de **Device > Certificate Management > SSL/TLS Service Profile**, el qual referenciaremos a al certificado de servidor que hemos creado en el punto anterior.
