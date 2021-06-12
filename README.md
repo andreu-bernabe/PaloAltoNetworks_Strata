@@ -1,6 +1,6 @@
 ![alt text](https://github.com/andreu-bernabe/PaloAltoNetworks_Strata/blob/main/Strata_Tagline_Logo_RGB.png "Logo Title Text 1")
 # PaloAltoNetworks_Strata
-Esta documentación es para poder plasmar ciertas configuraciónes de expermientacción de Home Lab.
+En esta docuemtnacion se encuentran las principales configuraciones para la implementación de un dispositivo Strata
 
 ## Index
  ### Global Protect
